@@ -282,15 +282,9 @@
   &__text {
     font-size: 16px;
     text-align: center;
-    margin-bottom: 45px;
   }
 
   &__content {
-    max-width: 640px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-
     .button {
       margin: 0 0 0 auto;
       display: block;
@@ -312,16 +306,39 @@
   }
 
   .calculate {
-    max-width: 380px;
     width: 100%;
     margin: 0 auto;
     position: relative;
     // z-index: -1;
 
+    &__img {
+      margin-right: 50px;
+    }
+
+    &__block {
+      max-width: 640px;
+      display: flex;
+      margin: 40px auto 0;
+    }
+
+    .form {
+      padding: 0;
+      background-color: transparent;
+      width: 200px;
+      .button {
+        margin-bottom: 10px;
+      }
+    }
+
     .question {
       margin-bottom: 20px;
       position: relative;
-      z-index: -1;
+      // z-index: -1;
+
+      &__error {
+        color: red;
+        margin-top: 20px;
+      }
     }
 
     .question--one {
