@@ -464,6 +464,9 @@
     &__block {
       padding: 50px 28px;
       width: 50%;
+      &__none {
+        display: none;
+      }
     }
 
     &__title {
